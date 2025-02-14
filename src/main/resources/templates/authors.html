@@ -14,18 +14,18 @@
 
 <table class="table">
     <thead>
-        <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Title</th>
-            <th scope="col">Publisher</th>
-        </tr>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+    </tr>
     </thead>
     <tbody>
-        <tr th:each="book : ${books}">
-            <td th:text="${book.getId()}">123</td>
-            <td th:text="${book.getTitle()}">Spring in Action</td>
-            <td th:text="${book.getPublisher().getPublisherName()}">Wrox</td>
-        </tr>
+    <tr th:each=" author : ${authors}">
+        <td th:text="${author.getId()}">123</td>
+        <td th:text="${author.getFirstName()}">Spring in Action</td>
+        <td th:text="${author.getLastName()}">Spring in Action</td>
+    </tr>
     </tbody>
 </table>
 </body>
