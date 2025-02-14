@@ -40,12 +40,12 @@ public class BootstrapData implements CommandLineRunner {
         var savedBook1 = bookRepository.save(book1);
 
         Author author2 = new Author();
-        author1.setFirstName("tttt");
-        author1.setLastName("ffff");
+        author2.setFirstName("tttt");
+        author2.setLastName("ffff");
 
         Book book2 = new Book();
-        book1.setTitle("wertwer");
-        book1.setIsbn("435345");
+        book2.setTitle("wertwer");
+        book2.setIsbn("435345");
 
 
         Author savedAuthor2 = authorRepository.save(author2);
